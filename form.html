@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="alternate" href="style.css" type="application/atom+xml" title="Atom">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 15px;
+    }
+
+    body {
+        font-family:cursive;
+        font-size: 20px;
+        padding: 10px;
+        background-color: rgb(170, 216, 235);
+        background-image: url("Contact-Form-background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        padding: 20px;
+        background-color: greenyellow;
+        font-weight: bolder;
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 500px;
+        height: 25px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: hotpink;
+
+    }
+
+    p {
+        font-style: italic;
+        font-size: 20px;
+        font-weight: bolder
+    }
+
+    img {
+        width: 300px;
+        height: 50px;
+        margin: 2px 4px;
+    }
+</style>
+
+<body>
+    <h1>Personal Information</h1>
+    <h2>Payment Data</h2>
+    <p>
+        Name-:<input type="text" name="fname" id="fname">
+    </p>
+    <p>
+        Email-:<input type="email" name="fname" id="fname">
+    </p>
+    <fieldset>
+        <legend>Gender</legend>
+        <p>
+
+            <br>
+            Male<input type="radio" value="male" name="gen"><br>
+            Female<input type="radio" value="female" name="gen">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Address-:</legend>
+        <p>
+            <textarea inputmode="full-width-latin" cols="40" rows="5"></textarea>
+        </p>
+    </fieldset>
+    <p>
+        PIN CODE:<input type="text" name="pin" id="pin">
+    </p>
+    <h1>Card Detail</h1>
+    <h5>CHOOSE CARD</h5>
+    <img src="1041952.jpg" alt="img"><br>
+
+    <select>
+        <option value="">--select your card--</option>
+        <option value="matser card">Mastercard</option>
+        <option value="rupay">Rupay</otion>
+        <option value="Paypal">PayPal</option>
+    </select>
+    <p>
+        Card No:<input type="number" name="card_no">
+    </p>
+    <p>
+        CVV:<input type="password" name="cvv" id="cvv">
+    </p>
+    <input type="submit" value="PAY NOW">
+
+</body>
+
+</html>
